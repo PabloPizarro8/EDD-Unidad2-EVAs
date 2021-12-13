@@ -17,28 +17,78 @@ public class EVA2_7_LISTA_SIMPLE {
         miLista.printList();
         */
         
-        Nodo nodoNuevo = new Nodo(100);
-        miLista.add(nodoNuevo);
-        miLista.add(new Nodo(200));
-        miLista.add(new Nodo(300));
-        miLista.add(new Nodo(400));
-        miLista.add(new Nodo(500));
+        miLista.add(00);
+        miLista.add(100);
+        miLista.add(200);
+        // miLista.add(300);
+        miLista.add(400);
+        miLista.add(500);
         
-        miLista.printList();
+        miLista.printList(); // Imprimir la lista
+        
+        /*// Limpiar la lista y probar si se limpio
         miLista.clearList();
         
         System.out.println("\nDespues de limpiar");
+        
         miLista.add(new Nodo(600));
         miLista.add(new Nodo(700));
         miLista.add(new Nodo(800));
         miLista.add(new Nodo(900));
         miLista.add(new Nodo(1000));
         miLista.add(new Nodo(1100));
+        
+        miLista.printList();*/  // Esta quitada del programa debido a que ya vimos que servia limpiar
+        
+        System.out.println("\nCantidad de nodos: " + miLista.tamanoLista());
+        
+        // Intentar, sino, atrapar el exception
+        /*try {
+            System.out.println("\nNodo en posicion 4: " + miLista.getPosicion(04));
+        } catch (Exception ex) {
+            ex.printStackTrace(); // Imrpime el error
+        }*/
+        
+        // Agregar un nodo en inicio 
+        /*System.out.println("Lista insertando un valor al inicio");
+        miLista.insertarEn(0, 0);
         miLista.printList();
         
-        //System.out.println("\nConteo de nodos");
-        System.out.println("\nPosicion de nodo");
-        System.out.println(miLista.getPosicion(04));
+        System.out.println("Tamaño de la lista: " + miLista.tamanoLista());*/
+        
+        // Agregar un nodo en cualquier posicion
+        /*System.out.println("Lista insertando un valor en cualquier posicion");
+        miLista.insertarEn(2, 50);
+        miLista.printList();
+        
+        System.out.println("Tamaño de la lista: " + miLista.tamanoLista());*/
+        
+        // Borrar un nodo al inicio
+        /*System.out.println("Lista borrando un nodo al inicio");
+        miLista.borrarEn(0);
+        miLista.printList();
+        
+        System.out.println("Tamaño de la lista: " + miLista.tamanoLista());*/
+        
+        // Borrar un nodo cualquiera
+        /*System.out.println("Lista borrando un nodo cualquiera");
+        miLista.borrarEn(5);
+        miLista.printList();
+        
+        System.out.println("Tamaño de la lista: " + miLista.tamanoLista());*/
+        
+        // Imprimir la lista inversamente
+        /*for (int i = (miLista.tamanoLista() - 1); i >= 0; i--) {
+            try {
+                System.out.println(miLista.getPosicion(i) + " - ");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }*/
+        
+        miLista.insertarEn(3, 300);
+        
+        miLista.printList();
     }
     
 }
